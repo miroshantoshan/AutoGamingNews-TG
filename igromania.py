@@ -33,6 +33,9 @@ chat_id = os.getenv('CHAT_ID')
 token = os.getenv('TOKEN')
 
 picture_folder_path = "./photos"
+
+os.makedirs(picture_folder_path, exist_ok=True)
+
 picture_name_igromania = "photo_igromania"
 
 url = 'https://www.igromania.ru/news/'

@@ -17,11 +17,14 @@ def download_picture(link_photo,path):
     with open(path, "wb") as file:
         file.write(response.content)
 
+picture_folder_path = "./photos"
+
+os.makedirs(picture_folder_path, exist_ok=True)
 
 chat_id = os.getenv('CHAT_ID')
 token = os.getenv('TOKEN')
 
-picture_folder_path = "./photos"
+
 picture_name = "photo_coopland"
 
 url = 'https://coop-land.ru/helpguides/new/'
